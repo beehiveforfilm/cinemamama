@@ -1,3 +1,3 @@
 # Plural Sight
-narrasy76@gmail.com
-StackMeUp
+USERNAME : narrasy76@gmail.com
+PassWord : StackMeUp
