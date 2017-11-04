@@ -1,0 +1,8 @@
+When you are mutating DOM/canvas you are by definition not writing any pure functions. Methods of the canvas object are part of the canvas API, which provide a way to mutate something outside your own code (=by definition not pure).
+An example would be react: the idea of that framework is instead of having people write impure code that handles with (all the state from) the DOM, they only write pure functions and components that simply return an output on a given input. Therefor React is considered very functional (because it allows you to create a lot by pure functions). But the code within react that actually updates the DOM is impure by nature.
+TLDR: any code that does something else than returning X on Y - (this something else being the side effect - sometimes called IO) - is by nature not pure. If you can only write pure functional code you can never:
+Do an AJAX call
+Query a database
+Manipulate the DOM (or canvas)
+Write to file
+Do a OS call
